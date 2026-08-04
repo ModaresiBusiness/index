@@ -1543,8 +1543,6 @@ function renderWholesaleTables(){
               <span class="pname-text">${it.name}${enLine}</span>
             </div>
           </td>
-          <td>${it.volume}</td>
-          <td>${cq}</td>
           <td class="buy-price">${formatPrice(it.buy)}</td>
           <td class="sell-price">${formatPrice(it.sell)}</td>
         </tr>`;
@@ -1556,7 +1554,7 @@ function renderWholesaleTables(){
         <div class="wholesale-table-wrap">
           <table class="wholesale-table">
             <thead><tr>
-              <th>نام محصول</th><th>حجم (cc)</th><th>تعداد/کارتن</th><th>قیمت خرید</th><th>${sellHeader}</th>
+              <th>نام محصول</th><th>قیمت خرید</th><th>${sellHeader}</th>
             </tr></thead>
             <tbody>${rows}</tbody>
           </table>
